@@ -5,7 +5,7 @@ import { Transition } from '@headlessui/react';
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <div >
       <nav className="bg-black">
         <div className="max-w-8xl mx-auto py-4 sm:py-2 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
