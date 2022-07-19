@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Odyssey Game: Play to learn web3</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='font-body'>
+      <div className="font-body">
         <Nav />
 
         <div className="bg-[url('/hero.png')] h-auto min-w-screen bg-cover bg-on-repeat bg-center bg-90% flex flex-col-reverse md:flex-col min-h-screen py-2">
@@ -87,6 +87,41 @@ const Home: NextPage = () => {
             short1={'Find a friend and join the'}
             short2={'vibrant of web3 community'}
           />
+        </div>
+      </div>
+
+      {/* testimony section */}
+      <div className=' text-center'>
+        <h4 className="text-white font-bold text-3xl md:text-[44px]">
+          Our Adventurer who are already landing jobs
+        </h4>
+      </div>
+      <div className="container flex flex-wrap col-3 md:gap-8 mx-auto px-4 md:justify-center mt-8 pb-32">
+        <div className="flex flex-col gap-8 justify-start">
+          <div>
+            <img src="/t1.png" alt="tweet" />
+          </div>
+          <div>
+            <img src="/t3.png" alt="tweet" />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-8 justify-center">
+          <div>
+            <img src="/t5.png" alt="tweet" />
+          </div>
+          <div>
+            <img src="/t6.png" alt="tweet" />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-8 justify-start">
+          <div>
+            <img src="/t4.png" alt="tweet" />
+          </div>
+          <div>
+            <img src="t2.png" alt="tweet" />
+          </div>
         </div>
       </div>
     </div>
