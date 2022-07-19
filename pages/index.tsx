@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Odyssey Game: Play to learn web3</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className='font-body'>
+      <div className='font-body'>
         <Nav />
 
         <div className="bg-[url('/hero.png')] h-auto min-w-screen bg-cover bg-on-repeat bg-center bg-90% flex flex-col-reverse md:flex-col min-h-screen py-2">
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
             short2={'vibrant of web3 community'}
           />
         </div>
-      </body>
+      </div>
     </div>
   );
 };
