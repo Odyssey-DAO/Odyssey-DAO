@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 import Nav from '../components/Navbar';
 import Card from '../components/Card';
 
@@ -41,28 +42,30 @@ const Home: NextPage = () => {
               By Odysses DAO
             </h4>
             <div className="content-center">
-              <button className="w-[200px] md:w-[300px] text-white text-center text-xs md:text-xl  border-4 border-white-800 h-auto rounded-full m-4 p-3 md:m-5 md:p-4 uppercase font-bold">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 md:h-10 md:w-10 inline "
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                {'  '} Start Adventure
-              </button>
+              <Link href="/challenges">
+                <button className="w-[200px] md:w-[300px] text-white text-center text-xs md:text-xl  border-4 border-white-800 h-auto rounded-full m-4 p-3 md:m-5 md:p-4 uppercase font-bold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 md:h-10 md:w-10 inline "
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  {'  '} Start Adventure
+                </button>
+              </Link>
             </div>
           </div>
         </div>

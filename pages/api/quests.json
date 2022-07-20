@@ -1,49 +1,56 @@
 [
     {
         "id": "ody1",
-        "name": "Some quest 1",
-        "summary": "This is the summary that will be displayed for quest 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "name": "Prepare for Launch",
+        "summary": "Get a Metamask wallet, create private/public keys, add Polygon Network, connect your wallet",
+        "description": "Get a Metamask wallet, create private/public keys, add Polygon Network, connect your wallet",
+        "image": "spaceship-vertical.png",
         "requirements": [
             {
-                "name": "Do something quest 1",
-                "description": "Perform some actions for quest 1"
+                "name": "Get a metamask wallet",
+                "description": "Get a metamask wallet"
             },
             {
-                "name": "Do something else for quest 1",
-                "description": "Perform some other sctions for quest 1"
+                "name": "Create a wallet address (seed phrase)",
+                "description": "Create a wallet address (seed phrase)"
+            },
+            {
+                "name": "add Polygon Network",
+                "description": "add Polygon Network"
+            },
+            {
+                "name": "connect to the Ody game webpage.",
+                "description": "connect to the Ody game webpage."
             }
         ]
     },
     {
         "id": "ody2",
-        "name": "Some quest 2",
-        "summary": "This is the summary that will be displayed for quest 2",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "name": "Fuel for Launch",
+        "summary": "Join OdysseyDAO Discord server/ game channel. Introduce yourself. Provide ETH public address. We need to put fuel tokens (200 $FUEL  and some $MATIC tokens to cover gas fee) in your wallet.",
+        "description": "Join OdysseyDAO Discord server/ game channel. Introduce yourself. Provide ETH public address. We need to put fuel tokens (200 $FUEL  and some $MATIC tokens to cover gas fee) in your wallet.",
+        "image": "spaceship-vertical.png",
         "requirements": [
             {
-                "name": "Do something quest 2",
-                "description": "Perform some actions for quest 2"
+                "name": "Join Discord server. Send Ody your public address",
+                "description": "Join Discord server. Send Ody your public address"
             },
             {
-                "name": "Do something else for quest 2",
-                "description": "Perform some other sctions for quest 2"
+                "name": "Wait for airdrop to be completed",
+                "description": "Wait for airdrop to be completed"
             }
         ]
     },
     {
         "id": "ody3",
-        "name": "Some quest 3",
-        "summary": "This is the summary that will be displayed for quest 3",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "name": "Life Support",
+        "summary": "Get some air ($AIR) to your crew. Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon)  and swap 50 $FUEL tokens for the some $AIR tokens.",
+        "description": "Get some air ($AIR) to your crew. Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon)  and swap 50 $FUEL tokens for the some $AIR tokens.",
+        "image": "spaceship-vertical.png",
         "requirements": [
             {
-                "name": "Do something quest 3",
-                "description": "Perform some actions for quest 3"
-            },
-            {
-                "name": "Do something else for quest 3",
-                "description": "Perform some other sctions for quest 3"
+                "name": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for the same $AIR tokens.",
+                "description": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for the same $AIR tokens."
             }
         ]
     }

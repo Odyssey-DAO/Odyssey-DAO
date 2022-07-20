@@ -1,32 +1,33 @@
 import { NextPage } from "next";
+import { Dispatch, SetStateAction } from "react";
 
-interface Requirement {
+export interface Requirement {
     name: string,
     description: string
-}
+};
 
 export interface QuestProps {
     id: string,
     name: string,
     summary: string,
     description: string,
-    requirements: Requirement[]
+    image: string,
+    requirements: Requirement[],
+    setQuestId: Dispatch<SetStateAction<string>>
 };
 
 const Quest: NextPage<QuestProps> = (quest) => {
-    const { id, name, summary, description, requirements } = quest;
+    const { id, name, summary, description, image, requirements, setQuestId } = quest;
 
     return (
         <>
-            <div className="grid grid-cols-2 grid-rows-2 p-3">
-                <div className="row-span-2">
-                    <img className="aspect-square" src="vercel.svg"></img>
+            <div className="grid grid-cols-3 border-2 p-1 bg-gray-500" onClick={() => setQuestId(id)}>
+                <div className="p-2">
+                    <img className="h-32 w-24" src={image}></img>
                 </div>
-                <div>
-                    <span className="font-bold">{name}</span>
-                </div>
-                <div>
-                    <span className="italic">{summary}</span>
+                <div className="col-span-2 p-2">
+                    <h4 className="font-bold">{name}</h4>
+                    <p className="italic">{summary}</p>
                 </div>
             </div>
         </>
