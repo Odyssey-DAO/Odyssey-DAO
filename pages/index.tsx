@@ -94,8 +94,29 @@ const Home: NextPage = () => {
         </div>
       </div>
 
+      {/* becoome an odysnat */}
+      {/* <div className='container flex flex-col items-center'> */}
+      <div className="flex items-center justify-center">
+        <p className="font-bold text-6xl text-center text-yellow-700">
+          Become an Odynauts
+        </p>
+      </div>
+      <ListCard number={1} description={'Join community throught discord'} />
+      <ListCard number={2} description={'Level up your skill with bootcamp'} />
+      <ListCard
+        number={3}
+        description={'Get ready adventure with odyssey Maiden Voyage'}
+      />
+      <div className=" flex items-center justify-center my-8">
+        <div className="bg-[#F76E00] rounded-full py-4 px-10">
+          <p className=" text-white font-bold text-lg px-8 ">Join Adventure</p>
+        </div>
+      </div>
+
+      {/* </div> */}
+
       {/* testimony section */}
-      <div className=" text-center">
+      <div className="mt-40 text-center">
         <h4 className="text-white font-bold text-3xl md:text-[44px]">
           Our Adventurer who are already landing jobs
         </h4>
@@ -128,22 +149,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-
-      {/* becoome an odysnat */}
-      {/* <div className='container flex flex-col items-center'> */}
-      <div className="flex items-center justify-center">
-        <p className="font-bold text-6xl text-center text-yellow-700">
-          Become an Odynauts
-        </p>
-      </div>
-      <ListCard number={1} description={"Join community throught discord"}/>
-      <ListCard number={2} description={"Level up your skill with bootcamp"}/>
-      <ListCard number={3} description={"Get ready adventure with odyssey Maiden Voyage"} />
-      <div>
-        Join Adventure
-      </div>
-
-      {/* </div> */}
     </div>
   );
 };
