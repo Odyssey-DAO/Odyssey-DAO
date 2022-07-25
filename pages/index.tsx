@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../components/Navbar';
 import Card from '../components/Card';
+import ListCard from '../components/ListCard';
 
 const Home: NextPage = () => {
   return (
@@ -94,7 +95,7 @@ const Home: NextPage = () => {
       </div>
 
       {/* testimony section */}
-      <div className=' text-center'>
+      <div className=" text-center">
         <h4 className="text-white font-bold text-3xl md:text-[44px]">
           Our Adventurer who are already landing jobs
         </h4>
@@ -127,6 +128,19 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+
+      {/* becoome an odysnat */}
+      {/* <div className='container flex flex-col items-center'> */}
+      <div className="flex items-center justify-center">
+        <p className="font-bold text-6xl text-center text-yellow-700">
+          Become an Odynauts
+        </p>
+      </div>
+      <ListCard />
+      <ListCard />
+      <ListCard />
+
+      {/* </div> */}
     </div>
   );
 };
