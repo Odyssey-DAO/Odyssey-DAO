@@ -136,9 +136,12 @@ const Home: NextPage = () => {
           Become an Odynauts
         </p>
       </div>
-      <ListCard />
-      <ListCard />
-      <ListCard />
+      <ListCard number={1} description={"Join community throught discord"}/>
+      <ListCard number={2} description={"Level up your skill with bootcamp"}/>
+      <ListCard number={3} description={"Get ready adventure with odyssey Maiden Voyage"} />
+      <div>
+        Join Adventure
+      </div>
 
       {/* </div> */}
     </div>
