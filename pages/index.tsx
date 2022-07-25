@@ -107,7 +107,7 @@ const Home: NextPage = () => {
         number={3}
         description={'Get ready adventure with odyssey Maiden Voyage'}
       />
-      <div className=" flex items-center justify-center my-8">
+      <div className=" flex items-center justify-center mt-16">
         <div className="bg-[#F76E00] rounded-full py-4 px-10">
           <p className=" text-white font-bold text-lg px-8 ">Join Adventure</p>
         </div>
