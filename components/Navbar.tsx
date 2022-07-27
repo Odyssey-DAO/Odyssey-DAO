@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Transition } from '@headlessui/react';
 
+import dynamic from "next/dynamic";
+const ConnectWallet = dynamic(() => import("./ConnectWallet"), {
+  ssr: false,
+});
+
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -46,12 +51,11 @@ function Nav() {
                     Join Community
                   </a>
 
-                  <a
-                    href="#"
+                  <div
                     className="text-gray-300 bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
                   >
-                    Connect Wallet
-                  </a>
+                    <ConnectWallet/>
+                  </div>
                 </div>
               </div>
             
@@ -142,12 +146,11 @@ function Nav() {
                   Join Community
                 </a>
 
-                <a
-                  href="#"
+                <div
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Connect Wallet
-                </a>
+                  <ConnectWallet/>
+                </div>
               </div>
             </div>
           )}

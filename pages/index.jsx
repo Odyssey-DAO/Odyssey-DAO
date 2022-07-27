@@ -1,12 +1,39 @@
-import type { NextPage } from 'next';
+// import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../components/Navbar';
 import Card from '../components/Card';
 import ListCard from '../components/ListCard';
+import { ethers } from 'ethers';
+import { useEffect, useState, createContext } from 'react';
 
-const Home: NextPage = () => {
+export const AppContext = createContext();
+
+// const Home: NextPage = () => {
+const Home = () => {
+
+  const [provider, setProvider] = useState(undefined);
+  const [signer, setSigner] = useState(undefined);
+  const [signerAddress, setSignerAddress] = useState(undefined);
+  const [networkId, setNetworkId] = useState(undefined);
+
+  const contextObject = {
+    provider,
+    setProvider,
+    signer,
+    setSigner,
+    signerAddress,
+    setSignerAddress,
+    networkId,
+    setNetworkId
+  }
+
+  useEffect(() => {
+    console.log('In index.js', provider, signer, signerAddress, networkId);
+  }, [networkId])
+
   return (
+    <AppContext.Provider value={contextObject}>
     <div className="bg-[#0B1224]">
       <Head>
         <title>Odyssey Game: Play to learn web3</title>
@@ -150,6 +177,7 @@ const Home: NextPage = () => {
         </div>
       </div>
     </div>
+    </AppContext.Provider>
   );
 };
 
