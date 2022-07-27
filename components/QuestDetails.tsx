@@ -11,6 +11,9 @@ const QuestDetails: NextPage<DetailsProps> = (details) => {
     return (
         <>
             <div className="relative w-full h-full">
+                <div className="absolute h-full w-full flex justify-center">
+                    <img className="h-full" src="spaceship-vertical.png"></img>
+                </div>
                 <div className="absolute inset-x-0 top-0 bg-gray-800 p-3 flex items-center justify-center">
                     <div>{header}</div>
                 </div>

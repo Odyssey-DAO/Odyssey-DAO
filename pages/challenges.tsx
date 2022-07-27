@@ -36,7 +36,7 @@ const Challenges: NextPage = () => {
   return (
     <>
       <div className="grid grid-cols-2 grid-rows-2 gap-1 h-screen bg-black text-white">
-        <div className='border-4 row-span-2 h-full'>
+        <div className='border-4 row-span-2 h-full overflow-auto'>
           {quests.map((quest: QuestProps) => (
             <Quest key={quest.id} id={quest.id} name={quest.name} summary={quest.summary} description={quest.description} image={quest.image} requirements={quest.requirements} setQuestId={setSelectedQuest} />
           ))}

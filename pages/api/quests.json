@@ -53,5 +53,74 @@
                 "description": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for the same $AIR tokens."
             }
         ]
+    },
+    {
+        "id": "ody4",
+        "name": "Blast off",
+        "summary": "Enter your launch code (tokenID) and mint your unique Launch authorization NFT!",
+        "description": "Enter your launch code (tokenID) and mint your unique Launch authorization NFT!",
+        "image": "spaceship-vertical.png",
+        "requirements": [
+            {
+                "name": "Enter your launch code (color code) in contract",
+                "description": "Enter your launch code (color code) in contract"
+            },
+            {
+                "name": "Mint Unique Launch Authorization NFT (launch button or 'Cleared for Launch') via contract through Polygonscan interaction",
+                "description": "Mint Unique Launch Authorization NFT (launch button or 'Cleared for Launch') via contract through Polygonscan interaction"
+            }
+        ]
+    },
+    {
+        "id": "ody5",
+        "name": "Emergency Situation",
+        "summary": "A fellow crew member needs some $AIR. Please send 1 $AIR token to someone",
+        "description": "A fellow crew member needs some $AIR. Please send 1 $AIR token to someone",
+        "image": "spaceship-vertical.png",
+        "requirements": [
+            {
+                "name": "Send only one $AIR token to someone.",
+                "description": "Send only one $AIR token to someone."
+            }
+        ]
+    },
+    {
+        "id": "ody6",
+        "name": "LFG",
+        "summary": "Your rocket is off course.<br>We need to fix it and correct the trajectory. Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)",
+        "description": "Your rocket is off course.<br>We need to fix it and correct the trajectory. Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)",
+        "image": "spaceship-vertical.png",
+        "requirements": [
+            {
+                "name": "Burn one $FUEL token by sending it to the burn address (0x00…00)",
+                "description": "Burn one $FUEL token by sending it to the burn address (0x00…00)"
+            }
+        ]
+    },
+    {
+        "id": "ody7",
+        "name": "What do we do?",
+        "summary": "We're still off course - but there's hope<br>You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote.<br>This is a link of voting smart contract",
+        "description": "We're still off course - but there's hope<br>You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote.<br>This is a link of voting smart contract",
+        "image": "spaceship-vertical.png",
+        "requirements": [
+            {
+                "name": "Vote  - interact with contract via polygon scan",
+                "description": "Vote  - interact with contract via polygon scan"
+            }
+        ]
+    },
+    {
+        "id": "ody8",
+        "name": "Landing",
+        "summary": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask (smart contract deployment - ERC-20 token)",
+        "description": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask (smart contract deployment - ERC-20 token)",
+        "image": "spaceship-vertical.png",
+        "requirements": [
+            {
+                "name": "Create and deploy an ERC-20 token via remix.ethereum.org",
+                "description": "Create and deploy an ERC-20 token via remix.ethereum.org"
+            }
+        ]
     }
 ]
