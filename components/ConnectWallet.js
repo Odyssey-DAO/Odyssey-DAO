@@ -2,10 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { AppContext } from "../pages";
 import { useWeb3Modal } from "../hooks/web3";
+import { type } from "os";
 
 const truncateAddress = (address) => {
   return address.slice(0, 6) + "..." + address.slice(-4);
 };
+
+
 
 const toHex = (num) => {
     const val = Number(num);
@@ -14,6 +17,8 @@ const toHex = (num) => {
 
 const ConnectWallet = () => {
     const [isWaiting, setWaiting] = useState(false)
+    const [error, setError] = useState(undefined);
+
 
     const { connectWallet, disconnectWallet, modalProvider, modalSigner, modalSignerAddress, modalNetworkId, modalError } = useWeb3Modal();
     const { 
