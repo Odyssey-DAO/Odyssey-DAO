@@ -7,6 +7,11 @@ const truncateAddress = (address) => {
   return address.slice(0, 6) + "..." + address.slice(-4);
 };
 
+const toHex = (num) => {
+    const val = Number(num);
+    return "0x" + val.toString(16);
+};
+
 const ConnectWallet = () => {
     const [isWaiting, setWaiting] = useState(false)
 
@@ -28,6 +33,16 @@ const ConnectWallet = () => {
         setNetworkId(modalNetworkId)
       }, [modalNetworkId])
 
+    useEffect(()=>{
+        if(provider){
+            provider.provider.on("chainChanged", (e) => {
+                if(e != toHex(80001)){
+                    switchNetwork();
+                }
+            });
+        }
+    }, [provider])
+
     const handleClickConnect = async () => {
         setWaiting(true);
         await connectWallet();
@@ -37,6 +52,35 @@ const ConnectWallet = () => {
     const handleClickAddress = () => {
         disconnectWallet();
     };
+
+    const switchNetwork = async () => {
+        try {
+          console.log('in switch network try')
+          await provider.provider.request({
+            method: "wallet_switchEthereumChain",
+            params: [{ chainId: toHex(80001) }]
+          });
+        } catch (switchError) {
+          if (switchError.code === 4902) {
+            try {
+              await provider.provider.request({
+                method: "wallet_addEthereumChain",
+                params: [networkParams[toHex(80001)]]
+              });
+            } catch (error) {
+              setError(error);
+            }
+          }
+        }
+    };
+
+    useEffect(() => {
+        console.log("inEffect", networkId)
+        // if ((signerAddress && networkId.chainId !== 80001) && (signerAddress && networkId.chainId !== 137)) {
+        if ((signerAddress && networkId.chainId !== 80001)) {
+          switchNetwork();
+        }
+    }, [networkId]);
 
     return (
         <button
