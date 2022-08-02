@@ -118,6 +118,82 @@ const Home = () => {
               short2={'vibrant of web3 community'}
             />
           </div>
+
+          {/* sstart your journey section */}
+          <div className="flex items-center justify-center">
+            <p className="font-bold text-6xl text-center text-yellow-700">
+              Start your journey
+            </p>
+          </div>
+
+          <div className="flex container mt-8 pb-32 mx-auto">
+            {/* FIRST DIV */}
+            <div className="flex flex-col">
+              <div className="bg-[#22293f] text-white">
+                <h2>MISSION</h2>
+              </div>
+              <div className="flex gap-3 bg-gray-700 text-white">
+                <div>
+                  <img src='#' alt='task image'/>
+                </div>
+                <div className="flex flex-col justify-center">
+                  <h2>TOPIC</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Alias, consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* SECOND DIV */}
+            <div>
+              <div className="bg-[#151a2e]">
+                <h3 className="uppercase text-white">
+                  Prepare your spacecraft
+                </h3>
+              </div>
+              <div>
+                <img src="/" alt="ship image" />
+              </div>
+              <div className="text-white">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Saepe vel, molestiae fugit eligendi aspernatur accusamus ea
+                  incidunt! Id enim iusto laboriosam rerum labore sint minus ut
+                  delectus aut? Dolore non, deserunt alias temporibus laudantium
+                  pariatur et? Mollitia fugit eligendi libero.
+                </p>
+              </div>
+              <div className="bg-[#151a2e]">
+                <h3 className="uppercase text-white">
+                  Prepare your spacecraft
+                </h3>
+              </div>
+              <div className="text-white">
+                <div className="flex gap-5">
+                  <p>Get MetaMask</p>
+                  <p>hr</p>
+                </div>
+                <div className="flex gap-5">
+                  <p>Jooin Discord Server</p>
+                  <p>hr</p>
+                </div>
+                <div className="flex gap-5">
+                  <p>Create Private/Public Key</p>
+                  <p>hr</p>
+                </div>
+                <div className="flex gap-5">
+                  <p>Add Polygon Network</p>
+                  <p>hr</p>
+                </div>
+                <div className="flex gap-5">
+                  <p>Connect to the Ody webpage</p>
+                  <p>hr</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* becoome an odysnat */}
