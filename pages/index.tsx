@@ -31,6 +31,15 @@ const Home = () => {
     console.log('In index.js', provider, signer, signerAddress, networkId);
   }, [networkId]);
 
+  useEffect(() => {
+    fetch(`/api/polygon`)
+    .then(response => response.json())
+    .then(data => {
+      console.log("Data received:", data);
+    });
+  }, [signerAddress]);
+
+
   return (
     <AppContext.Provider value={contextObject}>
       <div className="bg-[#0B1224]">
