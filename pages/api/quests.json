@@ -4,7 +4,7 @@
         "name": "Prepare for Launch",
         "summary": "Get a Metamask wallet, create private/public keys, add Polygon Network, connect your wallet",
         "description": "Get a Metamask wallet, create private/public keys, add Polygon Network, connect your wallet",
-        "image": "spaceship-vertical.png",
+        "image": "prepare-for-launch.png",
         "requirements": [
             {
                 "name": "Get a metamask wallet",
@@ -29,7 +29,7 @@
         "name": "Fuel for Launch",
         "summary": "Join OdysseyDAO Discord server/ game channel. Introduce yourself. Provide ETH public address. We need to put fuel tokens (200 $FUEL  and some $MATIC tokens to cover gas fee) in your wallet.",
         "description": "Join OdysseyDAO Discord server/ game channel. Introduce yourself. Provide ETH public address. We need to put fuel tokens (200 $FUEL  and some $MATIC tokens to cover gas fee) in your wallet.",
-        "image": "spaceship-vertical.png",
+        "image": "fuel-for-launch.png",
         "requirements": [
             {
                 "name": "Join Discord server. Send Ody your public address",
@@ -46,7 +46,7 @@
         "name": "Life Support",
         "summary": "Get some air ($AIR) to your crew. Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon)  and swap 50 $FUEL tokens for the some $AIR tokens.",
         "description": "Get some air ($AIR) to your crew. Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon)  and swap 50 $FUEL tokens for the some $AIR tokens.",
-        "image": "spaceship-vertical.png",
+        "image": "life-support.png",
         "requirements": [
             {
                 "name": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for the same $AIR tokens.",
@@ -59,7 +59,7 @@
         "name": "Blast off",
         "summary": "Enter your launch code (tokenID) and mint your unique Launch authorization NFT!",
         "description": "Enter your launch code (tokenID) and mint your unique Launch authorization NFT!",
-        "image": "spaceship-vertical.png",
+        "image": "blast-off.png",
         "requirements": [
             {
                 "name": "Enter your launch code (color code) in contract",
@@ -76,7 +76,7 @@
         "name": "Emergency Situation",
         "summary": "A fellow crew member needs some $AIR. Please send 1 $AIR token to someone",
         "description": "A fellow crew member needs some $AIR. Please send 1 $AIR token to someone",
-        "image": "spaceship-vertical.png",
+        "image": "emergency-situation.png",
         "requirements": [
             {
                 "name": "Send only one $AIR token to someone.",
@@ -89,7 +89,7 @@
         "name": "LFG",
         "summary": "Your rocket is off course.<br>We need to fix it and correct the trajectory. Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)",
         "description": "Your rocket is off course.<br>We need to fix it and correct the trajectory. Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)",
-        "image": "spaceship-vertical.png",
+        "image": "lfg.png",
         "requirements": [
             {
                 "name": "Burn one $FUEL token by sending it to the burn address (0x00…00)",
@@ -102,7 +102,7 @@
         "name": "What do we do?",
         "summary": "We're still off course - but there's hope<br>You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote.<br>This is a link of voting smart contract",
         "description": "We're still off course - but there's hope<br>You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote.<br>This is a link of voting smart contract",
-        "image": "spaceship-vertical.png",
+        "image": "what-do-we-do.png",
         "requirements": [
             {
                 "name": "Vote  - interact with contract via polygon scan",
@@ -115,7 +115,7 @@
         "name": "Landing",
         "summary": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask (smart contract deployment - ERC-20 token)",
         "description": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask (smart contract deployment - ERC-20 token)",
-        "image": "spaceship-vertical.png",
+        "image": "landing.png",
         "requirements": [
             {
                 "name": "Create and deploy an ERC-20 token via remix.ethereum.org",
