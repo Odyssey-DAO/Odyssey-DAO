@@ -9,6 +9,7 @@ const Challenges: NextPage = () => {
   const [selectedQuest, setSelectedQuest] = useState("");
   const [questHeader, setQuestHeader] = useState("No Quest Selected");
   const [questDescription, setQuestDescription] = useState("Please select a Quest from the left column");
+  const [questImage, setQuestImage] = useState("");
   const [questRequirements, setQuestRequirements] = useState([]);
 
   useEffect(() => {
@@ -28,6 +29,7 @@ const Challenges: NextPage = () => {
       if (quest) {
         setQuestHeader(quest.name);
         setQuestDescription(quest.description);
+        setQuestImage(quest.image);
         setQuestRequirements(quest.requirements);
       }
     }
@@ -42,7 +44,7 @@ const Challenges: NextPage = () => {
           ))}
         </div>
         <div className='border-4 h-full'>
-          <QuestDetails header={questHeader} description={questDescription}></QuestDetails>
+          <QuestDetails header={questHeader} description={questDescription} image={questImage}></QuestDetails>
         </div>
         <div className='border-4 h-full'>
           <QuestRequirements requirementsList={questRequirements}></QuestRequirements>

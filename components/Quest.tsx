@@ -23,7 +23,7 @@ const Quest: NextPage<QuestProps> = (quest) => {
         <>
             <div className="grid grid-cols-3 border-2 m-1 bg-gray-500" onClick={() => setQuestId(id)}>
                 <div className="flex justify-center p-2">
-                    <img className="h-32 w-24" src={image}></img>
+                    <img className="h-32 w-48" src={image}></img>
                 </div>
                 <div className="col-span-2 p-2">
                     <h4 className="font-bold">{name}</h4>
