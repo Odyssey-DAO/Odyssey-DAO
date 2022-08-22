@@ -1,52 +1,29 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-// import type {
-//   IRequestValidationResponse,
-//   IGameTaskState,
-//   IAPIRequestQueryParams,
-// } from "../../types";
-// import {
-//   NEXT_PUBLIC_DEBUG_ENABLE_DOTS,
-//   NODE_ENV,
-//   DEBUG_ENABLE,
-// } from "../../lib/constants";
 import {
-    fetchWalletAIRTokenBalance
+    fetchWalletAIRTokenBalance,
+    parseBalance,
 } from "../../lib";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-//   try {
-//     const {
-//       wallet: debugWallet,
-//       debug,
-//       wallet_address: walletAddress,
-//     }: IAPIRequestQueryParams = req.query;
-//     const { status, error }: IRequestValidationResponse = validateRequest(req);
-
-    // if (status !== 200) {
-    //   return res.status(status).json(error);
-    // }
-
-//     if (
-//       (NODE_ENV !== "production" || DEBUG_ENABLE) &&
-//       NEXT_PUBLIC_DEBUG_ENABLE_DOTS &&
-//       debug
-//     ) {
-//       const debugTaskState: IGameTaskState = await fetchDebugGameState(
-//         NEXT_PUBLIC_DEBUG_ENABLE_DOTS
-//       );
-//       return res.json(debugTaskState);
-//     }
-//     const gameTaskState: IGameTaskState = await fetchCurrentGameState(
-//       debugWallet ?? walletAddress
-//     );
-//     return res.json(gameTaskState);
-//   } catch (e) {
-//     console.error(e);
-//     return res.status(500).send("Internal server error");
-//   }
-    console.log(await fetchWalletAIRTokenBalance('0xa518097A3843F10c06a9B9419aa02245771dD442'))
+    try {
+        let address = req.query.wallet_address;
+        if (Array.isArray(address)) {
+            address  = address[0]
+        }
+        const result = await fetchWalletAIRTokenBalance(address);
+        if(result.status === '1'){
+            return res.json(parseBalance(result.result, 18, 3));
+        }
+        else{
+            return res.status(500).send("Internal server error");
+        }
+    }
+    catch(e){
+        console.error(e);
+        return res.status(500).send("Internal server error");
+    }   
 }

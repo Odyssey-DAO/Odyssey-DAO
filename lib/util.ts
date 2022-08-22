@@ -10,11 +10,7 @@ export const parseBalance = (
     decimals = 18,
     decimalsToDisplay = 0
 ): string => {
-
-    return commify(
-      parseFloat(formatUnits(value, decimals)).toFixed(decimalsToDisplay)
-    );
-
+    return commify(parseFloat(formatUnits(value, decimals)).toFixed(decimalsToDisplay));
   };
   
 export const parseBalanceToNum = (

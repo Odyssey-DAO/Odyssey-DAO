@@ -1,5 +1,4 @@
 import type {
-    IPolygonDataResponse,
     IPolygonBalanceResponse,
   } from "../../types";
   import { fetcher, sleep } from "../util";

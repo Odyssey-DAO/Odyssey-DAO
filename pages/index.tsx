@@ -16,6 +16,8 @@ const Home = () => {
   const [signerAddress, setSignerAddress] = useState(undefined);
   const [networkId, setNetworkId] = useState(undefined);
 
+  const [airTokenBalance, setAirTokenBalance] = useState(undefined);
+
   const contextObject = {
     provider,
     setProvider,
@@ -32,11 +34,13 @@ const Home = () => {
   }, [networkId]);
 
   useEffect(() => {
-    fetch(`/api/polygon`)
-    .then(response => response.json())
-    .then(data => {
-      console.log("Data received:", data);
-    });
+    if(signerAddress){
+      fetch(`/api/polygon?wallet_address=${signerAddress}`)
+      .then(response => response.json())
+      .then(data => {
+        setAirTokenBalance(data)
+      });
+    }
   }, [signerAddress]);
 
 
@@ -58,7 +62,7 @@ const Home = () => {
                     Mission Progress
                   </p>
                   <img src="/CoinVertical.png" alt="coin" />
-                  <p className="font-bold text-white text-2xl">0 $AIR</p>
+                  <p className="font-bold text-white text-2xl">{airTokenBalance? airTokenBalance : '...' } $AIR</p>
                 </div>
                 <div className="grid grid-flow-col justify-between mt-2">
                   <div className="w-[250px] inline col-span-4">
