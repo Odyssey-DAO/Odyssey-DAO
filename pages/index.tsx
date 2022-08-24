@@ -34,15 +34,14 @@ const Home = () => {
   }, [networkId]);
 
   useEffect(() => {
-    if(signerAddress){
+    if (signerAddress) {
       fetch(`/api/polygon?wallet_address=${signerAddress}`)
-      .then(response => response.json())
-      .then(data => {
-        setAirTokenBalance(data)
-      });
+        .then((response) => response.json())
+        .then((data) => {
+          setAirTokenBalance(data);
+        });
     }
   }, [signerAddress]);
-
 
   return (
     <AppContext.Provider value={contextObject}>
@@ -62,7 +61,9 @@ const Home = () => {
                     Mission Progress
                   </p>
                   <img src="/CoinVertical.png" alt="coin" />
-                  <p className="font-bold text-white text-2xl">{airTokenBalance? airTokenBalance : '...' } $AIR</p>
+                  <p className="font-bold text-white text-2xl">
+                    {airTokenBalance ? airTokenBalance : '...'} $AIR
+                  </p>
                 </div>
                 <div className="grid grid-flow-col justify-between mt-2">
                   <div className="w-[250px] inline col-span-4">
@@ -139,19 +140,69 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex container mt-8 pb-32 mx-auto">
+          <div className="flex flex-col md:flex-row container mt-8 pb-32 mx-auto gap-5 lg:w-[1150px]">
             {/* FIRST DIV */}
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-2 lg:w-[462px]">
               <div className="bg-[#22293f] text-white">
-                <h2>MISSION</h2>
+                <h2 className="font-normal text-2xl my-5 text-center">
+                  MISSION
+                </h2>
               </div>
-              <div className="flex gap-3 bg-gray-700 text-white">
-                <div>
-                  <img src='#' alt='task image'/>
+              <div className="flex gap-3 bg-gray-700 text-white py-8">
+                <div className="">
+                  <img className="" src="/mission-icon.png" alt="task image" />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <h2>TOPIC</h2>
-                  <p>
+                  <h2 className="text-lg">TOPIC</h2>
+                  <p className="text-base">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Alias, consectetur.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-3 bg-gray-700 text-white py-8">
+                <div className="">
+                  <img className="" src="/mission-icon.png" alt="task image" />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-lg">TOPIC</h2>
+                  <p className="text-base">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Alias, consectetur.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-3 bg-gray-700 text-white py-8">
+                <div className="">
+                  <img className="" src="/mission-icon.png" alt="task image" />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-lg">TOPIC</h2>
+                  <p className="text-base">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Alias, consectetur.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-3 bg-gray-700 text-white py-8">
+                <div className="">
+                  <img className="" src="/mission-icon.png" alt="task image" />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-lg">TOPIC</h2>
+                  <p className="text-base">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Alias, consectetur.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-3 bg-gray-700 text-white py-8">
+                <div className="">
+                  <img className="" src="/mission-icon.png" alt="task image" />
+                </div>
+                <div className="flex flex-col justify-center">
+                  <h2 className="text-lg">TOPIC</h2>
+                  <p className="text-base">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Alias, consectetur.
                   </p>
@@ -160,14 +211,18 @@ const Home = () => {
             </div>
 
             {/* SECOND DIV */}
-            <div>
+            <div className="lg:w-[688px]">
               <div className="bg-[#151a2e]">
                 <h3 className="uppercase text-white">
                   Prepare your spacecraft
                 </h3>
               </div>
-              <div>
-                <img src="/" alt="ship image" />
+              <div className="cover">
+                <img
+                  className="w-full bg-cover"
+                  src="/prepare-for-launch.png"
+                  alt="ship image"
+                />
               </div>
               <div className="text-white">
                 <p>
