@@ -266,25 +266,34 @@ const Home = () => {
 
         {/* becoome an odysnat */}
         {/* <div className='container flex flex-col items-center'> */}
-        <div className="flex items-center justify-center">
-          <p className="font-bold text-6xl text-center text-yellow-700">
-            Become an Odynauts
-          </p>
-        </div>
-        <ListCard number={1} description={'Join community throught discord'} />
-        <ListCard
-          number={2}
-          description={'Level up your skill with bootcamp'}
-        />
-        <ListCard
-          number={3}
-          description={'Get ready adventure with odyssey Maiden Voyage'}
-        />
-        <div className=" flex items-center justify-center mt-16">
-          <div className="bg-[#F76E00] rounded-full py-4 px-10">
-            <p className=" text-white font-bold text-lg px-8 ">
-              Join Adventure
+        <div className="lg:bg-[url('/Frame.png')] bg-cover bg-on-repeat bg-center relative justify-center items-center z-10 overflow-hidden">
+          <div className="flex items-center justify-center">
+            <p className="font-bold text-6xl text-center text-yellow-700">
+              Become an Odynauts
             </p>
+          </div>
+          {/* <div className="bg-[url('/Frame.png')] bg-cover bg-on-repeat bg-center absolute"> */}
+          {/* <div className='absolute z-[-3] w-full'>
+            <img className='w-full cover' src='/Frame.png' />
+          </div> */}
+          <ListCard
+            number={1}
+            description={'Join community throught discord'}
+          />
+          <ListCard
+            number={2}
+            description={'Level up your skill with bootcamp'}
+          />
+          <ListCard
+            number={3}
+            description={'Get ready adventure with odyssey Maiden Voyage'}
+          />
+          <div className=" flex items-center justify-center mt-16">
+            <div className="bg-[#F76E00] rounded-full py-4 px-10">
+              <p className=" text-white font-bold text-lg px-8 ">
+                Join Adventure
+              </p>
+            </div>
           </div>
         </div>
 
