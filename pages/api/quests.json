@@ -2,124 +2,120 @@
     {
         "id": "ody1",
         "name": "Prepare for Launch",
-        "summary": "Get a Metamask wallet, create private/public keys, add Polygon Network, connect your wallet",
-        "description": "Get a Metamask wallet, create private/public keys, add Polygon Network, connect your wallet",
+        "summary": "It's time to prepare your spaceship for web3 space travel.",
+        "description": "It's time to prepare your spaceship for web3 space travel.",
         "image": "prepare-for-launch.png",
         "requirements": [
             {
-                "name": "Get a metamask wallet",
-                "description": "Get a metamask wallet"
+                "name": "Please connect your Metamask wallet by clicking a “Connect Wallet” button on the top of this page.",
+                "description": "Please connect your Metamask wallet by clicking a “Connect Wallet” button on the top of this page."
             },
             {
-                "name": "Create a wallet address (seed phrase)",
-                "description": "Create a wallet address (seed phrase)"
+                "name": "Add “Polygon Mumbai Testnet (see instruction here)",
+                "description": "Add “Polygon Mumbai Testnet (see instruction here)"
             },
             {
-                "name": "add Polygon Network",
-                "description": "add Polygon Network"
-            },
-            {
-                "name": "connect to the Ody game webpage.",
-                "description": "connect to the Ody game webpage."
+                "name": "If you are new, no worries, install Metamask if you haven't already and set a wallet as per instruction here.",
+                "description": "If you are new, no worries, install Metamask if you haven't already and set a wallet as per instruction here."
             }
         ]
     },
     {
         "id": "ody2",
         "name": "Fuel for Launch",
-        "summary": "Join OdysseyDAO Discord server/ game channel. Introduce yourself. Provide ETH public address. We need to put fuel tokens (200 $FUEL  and some $MATIC tokens to cover gas fee) in your wallet.",
-        "description": "Join OdysseyDAO Discord server/ game channel. Introduce yourself. Provide ETH public address. We need to put fuel tokens (200 $FUEL  and some $MATIC tokens to cover gas fee) in your wallet.",
+        "summary": "You are ready to go to far-far places exploring the web3 universe, then let's refuel your rocket.",
+        "description": "You are ready to go to far-far places exploring the web3 universe, then let's refuel your rocket.",
         "image": "fuel-for-launch.png",
         "requirements": [
             {
-                "name": "Join Discord server. Send Ody your public address",
-                "description": "Join Discord server. Send Ody your public address"
+                "name": "Please join OdysseyDAO discord server, introduce yourself and ask for $FUEL tokens for a game.",
+                "description": "Please join OdysseyDAO discord server, introduce yourself and ask for $FUEL tokens for a game."
             },
             {
-                "name": "Wait for airdrop to be completed",
-                "description": "Wait for airdrop to be completed"
+                "name": "You will receive 200 $FUEL tokens and some test MATIC to cover a gas fee. It's enough to play a game.<br>($FUEL token contact: 0x9D742B0a9F3386A87f8aB62E01B61346Cc29AC26)",
+                "description": "You will receive 200 $FUEL tokens and some test MATIC to cover a gas fee. It's enough to play a game.<br>($FUEL token contact: 0x9D742B0a9F3386A87f8aB62E01B61346Cc29AC26)"
             }
         ]
     },
     {
         "id": "ody3",
         "name": "Life Support",
-        "summary": "Get some air ($AIR) to your crew. Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon)  and swap 50 $FUEL tokens for the some $AIR tokens.",
-        "description": "Get some air ($AIR) to your crew. Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon)  and swap 50 $FUEL tokens for the some $AIR tokens.",
+        "summary": "You've got a long journey ahead of you, let's bring enough oxygen for you and the crew.",
+        "description": "You've got a long journey ahead of you, let's bring enough oxygen for you and the crew.",
         "image": "life-support.png",
         "requirements": [
             {
-                "name": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for the same $AIR tokens.",
-                "description": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for the same $AIR tokens."
+                "name": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for some $AIR tokens.<br>($AIR token contract: 0xf55cb3825335669b5d6ef0d4b16a8202b6c523c3)",
+                "description": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for some $AIR tokens.<br>($AIR token contract: 0xf55cb3825335669b5d6ef0d4b16a8202b6c523c3)"
             }
         ]
     },
     {
         "id": "ody4",
         "name": "Blast off",
-        "summary": "Enter your launch code (tokenID) and mint your unique Launch authorization NFT!",
-        "description": "Enter your launch code (tokenID) and mint your unique Launch authorization NFT!",
+        "summary": "Ready - Steady - Go!",
+        "description": "Ready - Steady - Go!",
         "image": "blast-off.png",
         "requirements": [
             {
-                "name": "Enter your launch code (color code) in contract",
-                "description": "Enter your launch code (color code) in contract"
+                "name": "Go and mint your unique Launch Button NFT.<br>Enter your random launch code in the tokenID field.",
+                "description": "Go and mint your unique Launch Button NFT.<br>Enter your random launch code in the tokenID field."
             },
             {
-                "name": "Mint Unique Launch Authorization NFT (launch button or 'Cleared for Launch') via contract through Polygonscan interaction",
-                "description": "Mint Unique Launch Authorization NFT (launch button or 'Cleared for Launch') via contract through Polygonscan interaction"
+                "name": "You can explore your fresh minted NFT here: https://testnets.opensea.io/",
+                "description": "You can explore your fresh minted NFT here: https://testnets.opensea.io/"
             }
         ]
     },
     {
         "id": "ody5",
         "name": "Emergency Situation",
-        "summary": "A fellow crew member needs some $AIR. Please send 1 $AIR token to someone",
-        "description": "A fellow crew member needs some $AIR. Please send 1 $AIR token to someone",
+        "summary": "Outside the window, breathtaking views of the Web3 planets.",
+        "description": "Outside the window, breathtaking views of the Web3 planets.",
         "image": "emergency-situation.png",
         "requirements": [
             {
-                "name": "Send only one $AIR token to someone.",
-                "description": "Send only one $AIR token to someone."
+                "name": "A fellow crew member needs some air ($AIR token). Please send 1 $AIR token to someone.",
+                "description": "A fellow crew member needs some air ($AIR token). Please send 1 $AIR token to someone."
             }
         ]
     },
     {
         "id": "ody6",
         "name": "LFG",
-        "summary": "Your rocket is off course.<br>We need to fix it and correct the trajectory. Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)",
-        "description": "Your rocket is off course.<br>We need to fix it and correct the trajectory. Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)",
+        "summary": "Your rocket is off course. We need to fix it and correct the trajectory.",
+        "description": "Your rocket is off course. We need to fix it and correct the trajectory.",
         "image": "lfg.png",
         "requirements": [
             {
-                "name": "Burn one $FUEL token by sending it to the burn address (0x00…00)",
-                "description": "Burn one $FUEL token by sending it to the burn address (0x00…00)"
+                "name": "Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)",
+                "description": "Please burn one $FUEL token by sending it to the burn address (0x000000000000000000000000000000000000dead)"
             }
         ]
     },
     {
         "id": "ody7",
         "name": "What do we do?",
-        "summary": "We're still off course - but there's hope<br>You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote.<br>This is a link of voting smart contract",
-        "description": "We're still off course - but there's hope<br>You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote.<br>This is a link of voting smart contract",
+        "summary": "We're still off course - but there's hope.",
+        "description": "We're still off course - but there's hope.",
         "image": "what-do-we-do.png",
         "requirements": [
             {
-                "name": "Vote  - interact with contract via polygon scan",
-                "description": "Vote  - interact with contract via polygon scan"
+                "name": "You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote.",
+                "description": "You’ve got just enough fuel to either get to one or another planet. Please vote to choose Planet for landing. You need at least 100 $FUEL tokens to vote."
             }
         ]
     },
     {
         "id": "ody8",
         "name": "Landing",
-        "summary": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask (smart contract deployment - ERC-20 token)",
-        "description": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask (smart contract deployment - ERC-20 token)",
+        "summary": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask.",
+        "description": "The crew decides to continue the mission. When you land, you create a new token to be used for trade. Send your captains and crewmates one of your newly minted tokens through Metamask.",
         "image": "landing.png",
         "requirements": [
             {
-                "name": "Create and deploy an ERC-20 token via remix.ethereum.org",
-                "description": "Create and deploy an ERC-20 token via remix.ethereum.org"
+                "name": "Build your token via OpenZeppelin wizard  and deploy ERC-20 smart contract via http://remix.ethereum.org/",
+                "description": "Build your token via OpenZeppelin wizard  and deploy ERC-20 smart contract via http://remix.ethereum.org/"
             }
         ]
     }

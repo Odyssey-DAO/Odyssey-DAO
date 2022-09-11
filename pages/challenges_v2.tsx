@@ -2,11 +2,11 @@ import type { NextPage } from 'next';
 import React, { useEffect, useState } from 'react';
 import Nav from '../components/Navbar';
 import Quest, { QuestProps } from '../components/Quest';
-import QuestDetails, { DetailsProps } from '../components/QuestDetails';
+import QuestDetails_v2, { DetailsProps_v2 } from '../components/QuestDetails_v2';
 import QuestRequirements, { RequirementsProps } from '../components/QuestRequirements';
 import { AppContext } from '.';
 
-const Challenges: NextPage = () => {
+const Challenges_v2: NextPage = () => {
   const [provider, setProvider] = useState(undefined);
   const [signer, setSigner] = useState(undefined);
   const [signerAddress, setSignerAddress] = useState(undefined);
@@ -68,21 +68,21 @@ const Challenges: NextPage = () => {
   return (
     <AppContext.Provider value={contextObject}>
       <Nav />
-      <div className="grid grid-cols-2 grid-rows-2 gap-1 h-screen bg-black text-white">
-        <div className='border-4 row-span-2 h-full overflow-auto'>
+      <div className='bg-black text-white pt-3 pb-5 pl-7'>
+        <span className='text-4xl'>Challenges</span>
+      </div>
+      <div className="h-screen grid grid-cols-2 grid-rows-1 bg-black text-white">
+        <div className='h-full grid grid-cols-3 grid-rows-3 justify-self-center items-center'>
           {quests.map((quest: QuestProps) => (
-            <Quest key={quest.id} id={quest.id} name={quest.name} summary={quest.summary} description={quest.description} image={quest.image} requirements={quest.requirements} setQuestId={setSelectedQuest} />
+            <img key={quest.id} src={quest.image} className="w-48" onClick={() => setSelectedQuest(quest.id)}></img>
           ))}
         </div>
-        <div className='border-4 h-full'>
-          <QuestDetails header={questHeader} description={questDescription} image={questImage}></QuestDetails>
-        </div>
-        <div className='border-4 h-full'>
-          <QuestRequirements requirementsList={questRequirements}></QuestRequirements>
+        <div className='h-full flex justify-center items-center'>
+          <QuestDetails_v2 header={questHeader} description={questDescription} image={questImage}></QuestDetails_v2>
         </div>
       </div>
     </AppContext.Provider>
   );
 };
 
-export default Challenges;
+export default Challenges_v2;
