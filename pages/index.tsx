@@ -82,6 +82,16 @@ const Home = () => {
               <h4 className="text-white font-bold md:text-4xl xm:text sm:text-base">
                 By Odysses DAO
               </h4>
+              <p className="text-white font-bold md:text-xl xm:text sm:text-base opacity-75 mt-3">
+                Play and Learn Web3.
+              </p>
+              <p className="text-white font-bold md:text-xl xm:text sm:text-base opacity-75">
+                Discover Web3 space by doing simple tasks in blockchain (Polygon
+                Mumbai testnet for now).
+              </p>
+              <p className="text-white font-bold md:text-xl xm:text sm:text-base opacity-75">
+                It's free to play. Login with Metamask wallet to get started.
+              </p>
               <div className="content-center">
                 <Link href="/challenges">
                   <button className="w-[200px] md:w-[300px] text-white text-center text-xs md:text-xl  border-4 border-white-800 h-auto rounded-full m-4 p-3 md:m-5 md:p-4 uppercase font-bold">
