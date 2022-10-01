@@ -20,7 +20,7 @@ const QuestRequirements: NextPage<RequirementsProps> = (requirements) => {
                 <div className="row-span-5 w-full h-full bg-gray-700 overflow-auto">
                     {requirementsList.map((requirement: Requirement) => (
                         <div key={index++} className="grid grid-cols-3 w-full">
-                            <div className="col-span-2 p-3">{requirement.name}</div>
+                            <div className="col-span-2 p-3" dangerouslySetInnerHTML={{ __html: requirement.name }} />
                             <div className="col-span-1 flex justify-end items-center p-3">
                                 <meter className="h-3" value={20} min={0} max={100}></meter>
                             </div>

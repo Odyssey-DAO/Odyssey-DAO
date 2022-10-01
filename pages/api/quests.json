@@ -45,8 +45,8 @@
         "image": "life-support.png",
         "requirements": [
             {
-                "name": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for some $AIR tokens.<br>($AIR token contract: 0xf55cb3825335669b5d6ef0d4b16a8202b6c523c3)",
-                "description": "Go to Uniswap (https://app.uniswap.org/#/swap?chain=polygon) and swap 50 $FUEL tokens for some $AIR tokens.<br>($AIR token contract: 0xf55cb3825335669b5d6ef0d4b16a8202b6c523c3)"
+                "name": "Go to Uniswap (<a href='https://app.uniswap.org/#/swap?chain=polygon'>https://app.uniswap.org/#/swap?chain=polygon</a>) and swap 50 $FUEL tokens for some $AIR tokens.<br>($AIR token contract: 0xf55cb3825335669b5d6ef0d4b16a8202b6c523c3)",
+                "description": "Go to Uniswap (<a href='https://app.uniswap.org/#/swap?chain=polygon'>https://app.uniswap.org/#/swap?chain=polygon</a>) and swap 50 $FUEL tokens for some $AIR tokens.<br>($AIR token contract: 0xf55cb3825335669b5d6ef0d4b16a8202b6c523c3)"
             }
         ]
     },
@@ -62,8 +62,8 @@
                 "description": "Go and mint your unique Launch Button NFT.<br>Enter your random launch code in the tokenID field."
             },
             {
-                "name": "You can explore your fresh minted NFT here: https://testnets.opensea.io/",
-                "description": "You can explore your fresh minted NFT here: https://testnets.opensea.io/"
+                "name": "You can explore your fresh minted NFT here: <a href='https://testnets.opensea.io/'>https://testnets.opensea.io/</a>",
+                "description": "You can explore your fresh minted NFT here: <a href='https://testnets.opensea.io/'>https://testnets.opensea.io/</a>"
             }
         ]
     },
@@ -114,8 +114,8 @@
         "image": "landing.png",
         "requirements": [
             {
-                "name": "Build your token via OpenZeppelin wizard  and deploy ERC-20 smart contract via http://remix.ethereum.org/",
-                "description": "Build your token via OpenZeppelin wizard  and deploy ERC-20 smart contract via http://remix.ethereum.org/"
+                "name": "Build your token via OpenZeppelin wizard  and deploy ERC-20 smart contract via <a href='http://remix.ethereum.org/'>http://remix.ethereum.org/</a>",
+                "description": "Build your token via OpenZeppelin wizard  and deploy ERC-20 smart contract via <a href='http://remix.ethereum.org/'>http://remix.ethereum.org/</a>"
             }
         ]
     }
