@@ -53,8 +53,8 @@ const Home = () => {
         <div className="font-body">
           <Nav />
 
-          <div className="bg-[url('/hero.png')] h-auto min-w-screen bg-cover bg-on-repeat bg-center bg-90% flex flex-col-reverse md:flex-col min-h-screen py-2">
-            <div className="flex justify-center m-10 md:justify-end md:p-8">
+          <div className="relative bg-[url('/hero.png')] h-auto min-w-screen bg-cover bg-on-repeat bg-center bg-90% flex flex-col-reverse md:flex-col min-h-screen py-2 justify-center">
+            <div className="flex justify-center m-10 md:justify-end md:p-8 absolute top-0 right-0">
               <div className="flex flex-col justify-end w-[300px]">
                 <div className="flex justify-between">
                   <p className=" font-bold text-white text-lg">
@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="text-center mt-20 md:mt-56">
+            <div className="text-center">
               <h1 className="mb-3 text-3xl font-bold text-center text-white md:text-6xl lg:text-8xl">
                 Maiden Voyage
               </h1>
